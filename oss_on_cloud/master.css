@@ -1,0 +1,513 @@
+/** 使い回す際の変更箇所 **/
+/* 色 */
+/* アクセント : #00abec */
+/* ワンポイント : #113157 */
+/** 一括設定 **/
+body{
+  color: #000000;
+  font-size: 12px;
+  line-height: 23px;
+  font-mily: sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  min-width: 1118px;
+  background-size: cover;
+  background: #eeeeee;
+}
+::selection{
+  background: #00abec;
+}
+a{
+  color: #113157;
+  text-decoration: none;
+}
+a:hover{
+  color: #00abec;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+p{
+  font-size: 13px;
+  text-indent: .8em;
+    line-height: 23px;
+}
+strong{
+  font-weight: bold;
+}
+/** ヘッダ **/
+header{
+  z-index: 2;
+  width: 100%;
+  min-width: 1118px;
+  border-bottom: 1px transparent solid;
+  position: fixed;
+}
+header hr{
+  margin: 0;
+  border-style: solid;
+  border-color: #113157;
+  border-width: 2px 0 0 0;
+}
+header nav{
+  text-align: center;
+  height: 70px;
+  background: #ffffff;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+header nav a img{
+  color: #ffffff;
+  width: 50px;
+  display: inline-block;
+  -webkit-filter:drop-shadow(#ffffff 0 0 1px);
+  position: absolute;
+  top: 10px;
+  left:10%;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+header nav ul li{
+  width: 200px;
+  display: inline-table;
+  position: relative;
+}
+header nav ul li:after{
+  z-index: 0;
+	width: 0;
+  height: 2px;
+	content: "";
+	background-color: #113157;
+	position: absolute;
+  top:0;
+	left: 0;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+header nav ul li:hover:after{
+  width: 100%;
+}
+header nav ul li a{
+  color: #000000;
+  text-shadow: 0 0 15px #ffffff;
+  font-size: 1.1em;
+  line-height: 70px;
+  display: block;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+header nav ul li a:hover{
+  color: #113157;
+}
+/** フッタ **/
+footer{
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  padding: 13px 0 0 0;
+  position: relative;
+  background: white;
+}
+footer p{
+  margin: 0 0 0 100px;
+  line-height: 16px;
+  text-indent: 0;
+  font-size: .8em;
+}
+footer p a{
+  text-decoration: underline;
+  font-weight: bold;
+}
+footer a i.fa{
+  color: #113157;
+  font-size: 50px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  margin: 0 100px;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+footer a i.fa:hover{
+  color: #00abec;
+}
+/** セクション **/
+section{
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+section h1{
+  font-size: 1.7em;
+  font-weight: bold;
+  background: #00abec;
+  color: white;
+  display: block;
+  height: 30px;
+  position: absolute;
+  top:-60px;
+  bottom: 0;
+  right: 0;
+  left:0;
+  padding: 30px 0 0 130px;
+}
+section h2{
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 15px 0 5px 0;
+  padding: 5px 0 5px 15px;
+  border-left: 6px solid #00abec;
+}
+section .contentwrap{
+  display: table;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+section .contentwrap i.fa{
+  color: #113157;
+  font-size: 75px;
+  text-align: center;
+  line-height: 150px;
+  width: 150px;
+  height: 150px;
+  margin: 5px 5%;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #00abec;
+}
+section .contentwrap i.fa.fa-exclamation-triangle,
+section .contentwrap i.fa.fa-envelope{
+  margin: 5px 0%;
+}
+section .contentwrap span.fa{
+  margin-right: 5px;
+}
+section a i.fa{
+  color: #113157;
+  font-size: 50px;
+  width: 33px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: 0 auto;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+section a i.fa:hover{
+  color: #00abec;
+}
+section.mainvisual{
+  width: 100%;
+  height: 100vh;
+}
+section.mainvisual img{
+  width: 100%;
+}
+section.mainvisual .titlewrap{
+  height: 300px;
+  padding:50px 100px 25px 100px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+section.mainvisual .titlewrap p{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 30px 0 0 0;
+  line-height: 25px;
+  text-indent: 0;
+}
+section.mainvisual .contentwrap img.logo{
+  width: 1200px;
+}
+section.mainvisual a i.fa:hover{
+  color: #00abec;
+}
+section#first h1{
+  top:0;
+  left: 380px;
+}
+section#first .contentwrap{
+  width: 100%;
+}
+section#first div.graph{
+  position: relative;
+  z-index: 1;
+  margin: 193px 0 0 0;
+  width: 50%;
+}
+section#first div.graph p{
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+  text-indent: 0;
+}
+section#first div.graph div{
+  padding: 50px 0 0 100px;
+  overflow: hidden;
+}
+section#first div.graph div.oss{
+  width: 280px;
+  color: #cbf00a;
+    background: #113157;
+}
+section#first div.graph div.rhel{
+  width: 305px;
+  color: #000000;
+  background: #ad0000;
+}
+section#first div.graph div.paas{
+  width: 330px;
+  color: #113157;
+    background: #cbf00a;
+}
+section#first div.graph div.iaas{
+  width: 355px;
+  color: #113157;
+    background: #00abec;
+}
+section#first div.right{
+  height: 425px;
+  overflow: hidden;
+  background: white;
+  position: absolute;
+  top:60px;
+  bottom:0;
+  right: 0;
+  left: 380px;
+  z-index: 0;
+  padding: 0 100px;
+}
+section#first div.right div.textwrap{
+  height: 425px;
+  display: table-cell;
+  vertical-align: middle;
+}
+section#first div.right div.rhel{
+}
+section#first div.right div.vistara{
+  padding: 0 0 0 20px;
+}
+section#first div.right div.vistara a{
+  float: right;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+section#second h1,
+section#third h1{
+  background: #113157;
+}
+section#second h2{
+  border-left: 6px solid #113157;
+}
+section#second div.contentwrap{
+  background: white;
+  padding: 15px 100px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto 100px;
+}
+section#third div.contentwrap{
+  padding: 50px 100px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+section#third .contentwrap p{
+  height: 130px;
+  display: table-cell;
+  vertical-align: middle;
+}
+section#third .contentwrap a.button{
+    height: 130px;
+    margin: 0 0 20px 0;
+  color: #ffffff;
+  padding: 0 20px;
+  display: block;
+  background-size: cover;
+  border-radius: 2px;
+  border: 2px solid transparent;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+section#third .contentwrap a.button:hover{
+  color: #113157;
+  border: 2px solid #113157;
+}
+section#third .contentwrap a.azureblog{
+  background: url(img/azureblog.png) 0 420px;
+  background-size: cover;
+}
+section#third .contentwrap a.azureblog:hover{
+  background: url(img/azureblogw.png) 0 420px;
+  background-size: cover;
+}
+section#third .contentwrap a.fbpage{
+  background: url(img/fbpage.png) 0 220px;
+  background-size: cover;
+}
+section#third .contentwrap a.fbpage:hover{
+  background: url(img/fbpagew.png) 0 220px;
+  background-size: cover;
+}
+section#third .contentwrap a.button span{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+section#third .contentwrap .buttonwrap{
+  white-space: nowrap;
+  text-align: center;
+}
+section#third .contentwrap .buttonwrap a.link{
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px 0;
+  width: 24%;
+  display: inline-block;
+  border-radius: 2px;
+  background: #113157;
+  border: 2px solid transparent;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+section#third .contentwrap .buttonwrap a.link:hover{
+  color: #113157;
+  background: white;
+  border: 2px solid #113157;
+}
+section#button{
+  height: 40vh;
+}
+section#button div.contentwrap{
+  width: 100%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+section#button .buttonwrap{
+  margin: 0 100px;
+}
+section#button .buttonwrap a.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+section#button .buttonwrap a.container button{
+  color: #ffffff;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px;
+  display: block;
+  border-radius: 2px;
+  background: #00abec;
+  border: 2px solid transparent;
+  position: relative;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+section#button .buttonwrap a.container button::after {
+  content: '';
+  left: 0;
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: #00abec;
+  position: absolute;
+	-webkit-transition: all .8s;
+	   -moz-transition: all .8s;
+	    -ms-transition: all .8s;
+	     -o-transition: all .8s;
+	        transition: all .8s;
+}
+section#button .buttonwrap a.container button:hover {
+  color: #00abec;
+  cursor: pointer;
+  background: white;
+  border: 2px solid #00abec;
+}
+section#button .buttonwrap a.container button:hover:after {
+  width: 100%;
+}

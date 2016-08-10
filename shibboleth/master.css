@@ -1,0 +1,478 @@
+/** 使い回す際の変更箇所 **/
+/* 色 */
+/* アクセント : #ffb300 */
+/* ワンポイント : #ff0000 */
+/** 一括設定 **/
+body{
+  color: #333333;
+  font-size: 12px;
+  line-height: 23px;
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  min-width: 1118px;
+  background: #dddddd url("img/PAK85.png") left center no-repeat fixed;
+  background-size: cover;
+}
+::selection{
+  background: #ffb300; /* アクセント */
+}
+a{
+  color: #ff0000; /* ワンポイント */
+  text-decoration: none;
+}
+a:hover{
+  color: #ffb300; /* アクセント */
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+p{
+  font-size: 13px;
+  text-indent: .8em;
+}
+strong{
+  font-weight: bold;
+}
+/** ヘッダ **/
+header{
+  z-index: 2;
+  width: 100%;
+  min-width: 1118px;
+  border-bottom: 1px transparent solid;
+  position: fixed;
+}
+header hr{
+  margin: 0;
+  border-style: solid;
+  border-color: #ff0000; /* ワンポイント */
+  border-width: 2px 0 0 0;
+}
+header nav{
+  text-align: center;
+  height: 70px;
+  background: rgba(255,255,255,.6);
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+header nav a img{
+  color: #ffffff;
+  width: 50px;
+  display: inline-block;
+  -webkit-filter:drop-shadow(#ffffff 0 0 1px);
+  position: absolute;
+  top: 10px;
+  left:10%;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+header nav ul li{
+  width: 200px;
+  display: inline-table;
+  position: relative;
+}
+header nav ul li:after{
+  z-index: 0;
+	width: 0;
+  height: 2px;
+	content: "";
+	background-color: #ff0000; /* ワンポイント */
+	position: absolute;
+  top:0;
+	left: 0;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+header nav ul li:hover:after{
+  width: 100%;
+}
+header nav ul li a{
+  color: #333333;
+  text-shadow: 0 0 15px #ffffff;
+  font-size: 1.1em;
+  line-height: 70px;
+  display: block;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+header nav ul li a:hover{
+  color: #ff0000; /* ワンポイント */
+}
+/** フッタ **/
+footer{
+  color: #ffffff;
+  width: 88%;
+  height: 150px;
+  margin: 0 auto;
+  padding: 13px 0 0 0;
+  position: relative;
+}
+footer p{
+  font-weight: bold;
+  line-height: 18px;
+}
+footer p a{
+  color: #ffffff;
+  text-decoration: underline;
+}
+footer a i.fa{
+  color: rgba(255, 255, 255, .9);
+  font-size: 50px;
+  width: 1px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  left: 90%;
+  margin: 0 auto;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+footer a i.fa:hover{
+  color: #ffb300; /* アクセント */
+}
+/** セクション **/
+.whiteSpace{
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.2);
+  border-radius: 2px 2px 0 0;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+section{
+  width: 90%;
+  height: 550px;
+  margin: 0 auto;
+  background: rgba(255,255,255,.2);
+  position: relative;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+section h1{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+section h2{
+  font-size: 2em;
+  line-height: 35px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #ffffff,
+               2px 2px 0 #aaaaaa;
+  padding: 1em 1.5em;
+  margin: 20px 0 40px 0;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+section h2::before,
+section h2::after{
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 6px;
+  box-sizing: border-box;
+  position: absolute;
+}
+section h2::before{
+  top: 0;
+  border-top: 2px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+section h2::after{
+  bottom: 0;
+  border-top: 1px solid #333333;
+  border-bottom: 2px solid #333333;
+}
+section h2 span{
+  font-size: 1.3em;
+}
+section h3{
+  font-size: 2em;
+  line-height: 40px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 5px 0 5px 20px;
+  border-left: 6px solid #ffb300;  /* アクセント */
+  position: relative;
+}
+section h3::after{
+  width: 99%;
+  height: 0;
+  content:"";
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+section .contentwrap{
+  width: 90%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+section .contentwrap i.fa{
+  color: #ffffff;
+  font-size: 75px;
+  text-align: center;
+  line-height: 150px;
+  width: 150px;
+  height: 150px;
+  margin: 5px 5%;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ffb300;  /* アクセント */
+}
+section .contentwrap i.fa.fa-exclamation-triangle,
+section .contentwrap i.fa.fa-envelope{
+  margin: 5px 0%;
+}
+section .contentwrap span.fa{
+  margin-right: 5px;
+}
+section.mainvisual{
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+}
+section#button{
+  height: 350px;
+}
+section a i.fa{
+  color: #aaaaaa;
+  font-size: 50px;
+  width: 33px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin: 0 auto;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+}
+section a i.fa:hover{
+  color: #ffb300; /* アクセント */
+}
+section.mainvisual img.logo{
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  margin: auto;
+}
+section.mainvisual .titlewrap{
+  height: 350px;
+  border-radius: 2px;
+  background: #ffffff;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  margin: auto;
+	-webkit-transition: all .4s;
+	   -moz-transition: all .4s;
+	    -ms-transition: all .4s;
+	     -o-transition: all .4s;
+	        transition: all .4s;
+}
+section.mainvisual .titlewrap p{
+  text-indent: 0;
+}
+section.mainvisual .titlewrap .textwrap{
+  height: 350px;
+  padding: 0 50px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+section.mainvisual a i.fa{
+  color: rgba(255, 255, 255, .9);
+}
+section.mainvisual a i.fa:hover{
+  color: #ffb300; /* アクセント */
+}
+section#first .contentwrap table{
+  margin: 10px 0;
+  max-width: 65%;
+  display: inline-block;
+  border-spacing: 0 1px;
+  vertical-align: middle;
+  border-collapse: separate;
+}
+section#first .contentwrap table tr th,
+section#first .contentwrap table tr td{
+  padding: 10px 20px;
+}
+section#first .contentwrap table tr th{
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  background: #ffb300; /* アクセント */
+  border-radius: 2px 0 0 2px;
+  position: relative;
+}
+section#first .contentwrap table tr th:after{
+  border: solid transparent; /* 動かさない */
+  width: 0;
+  height: 0;
+  content: "";
+  margin-top: -7px;
+  border-width: 7px;
+  border-color: transparent;
+  border-left-color: #ffb300; /* アクセント */
+  position: absolute;
+  top: 50%;
+  left: 100%;
+}
+section#first .contentwrap table tr td{
+  background: #eeeeee;
+  border-radius: 0 2px 2px 0;
+}
+section#first .contentwrap .centering{
+  white-space: nowrap;
+}
+section#first .contentwrap table.level{
+  margin: 0 0 0 10px;
+  display: inline-block;
+}
+section#first .contentwrap table.level tr th{
+  font-weight: normal;
+  padding: 0 20px;
+  background: #333333;
+}
+section#first .contentwrap table.level tr th:after{
+  border-left-color: transparent;
+}
+section#first .contentwrap table.level tr td{
+  padding: 0 30px;
+}
+section#first .contentwrap ul{
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+section#second .contentwrap .textwrap{
+  height: 150px;
+  max-width: 65%;
+  border-radius: 2px;
+  background: #eeeeee;
+  display: inline-block;
+  vertical-align: middle;
+}
+section#second .contentwrap .textwrap.left{
+  margin: 0 5%;
+}
+section#second .contentwrap .textwrap p{
+  font-size: 12px;
+  height: 150px;
+  padding: 0 30px;
+  display: table-cell;
+  vertical-align: middle;
+}
+section#button .buttonwrap{
+  width: 65%;
+  height: 150px;
+  margin: 0 5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+section#button .buttonwrap a.container {
+  margin: 0 0 8px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+section#button .buttonwrap a.container button{
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  display: block;
+  border-radius: 2px;
+  background: #ffb300; /* アクセント */
+  border: 2px solid transparent;
+  position: relative;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	    -ms-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+section#button .buttonwrap a.container button::after {
+  content: '';
+  left: 0;
+  width: 0;
+  bottom: 0;
+  height: 3px;
+  background: #ffb300; /* アクセント */
+  position: absolute;
+	-webkit-transition: all .8s;
+	   -moz-transition: all .8s;
+	    -ms-transition: all .8s;
+	     -o-transition: all .8s;
+	        transition: all .8s;
+}
+section#button .buttonwrap a.container button:hover {
+  color: #ffb300; /*アクセント */
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #ffb300; /* アクセント */
+}
+section#button .buttonwrap a.container button:hover:after {
+  width: 100%;
+}
